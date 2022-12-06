@@ -2266,4 +2266,4 @@ arrayThree.push(sortBiggest[0], sortBiggest[1], sortBiggest[2]);
 const sumOfThree = arrayThree.reduce((acc, v) => {
   return acc + v;
 }, 0);
-console.log(sumOfThree);
+console.log(numbersData);
