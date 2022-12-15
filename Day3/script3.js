@@ -354,6 +354,8 @@ const priority = {
   Z: 52,
 };
 
+//Divide each line of letters in two and find common letter
+//Each common letter convert into coresponding number and sum it
 function getCommonChar(a, b) {
   for (ch of a) {
     if (b.indexOf(ch) > -1) {
@@ -375,6 +377,8 @@ const finalSum = mappedValues.reduce((acc, v) => {
   return acc + v;
 });
 
+//the batch of lines divide into smaller batches of three, find common letter between these three
+//Each common letter convert into coresponding number and sum it
 const groupOfThree = [];
 function divideInThree(arr) {
   for (let i = 0; i < arr.length; i += 3) {
