@@ -528,7 +528,18 @@ const removeCommas = textToNumbers.map((line) =>
   line.map((el) => el.filter((el) => el !== ","))
 );
 
-console.log(removeCommas);
+const test = ["4", "5", "7"];
+const testNumber = test.map((el) => parseInt(el));
+const stacksMove = stacks[testNumber[1] - 1];
+const stackMoveSliced = stacks.map((row) => row.map((el) => [...el]));
+
+// function moveCrates(arr, logic) {
+// const craneStep = arr[]
+
+// }
+// moveCrates(stacks, testNumber);
+
+console.log(stackMoveSliced);
 
 // The expedition can depart as soon as the final supplies have been unloaded from the ships. Supplies are stored in stacks of marked crates, but because the needed supplies are buried under many other crates, the crates need to be rearranged.
 
